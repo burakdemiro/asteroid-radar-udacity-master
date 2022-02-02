@@ -2,10 +2,10 @@ package com.udacity.asteroidradar.main
 
 import android.app.Application
 import androidx.lifecycle.*
-import kotlinx.coroutines.launch
 import com.udacity.asteroidradar.Asteroid
-import com.udacity.asteroidradar.repository.AsteroidsRepository
 import com.udacity.asteroidradar.database.getDatabase
+import com.udacity.asteroidradar.repository.AsteroidsRepository
+import kotlinx.coroutines.launch
 
 class MainViewModel(application: Application): AndroidViewModel(application) {
     private val database = getDatabase(application)

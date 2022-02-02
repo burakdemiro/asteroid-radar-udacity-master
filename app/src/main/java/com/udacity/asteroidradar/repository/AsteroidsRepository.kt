@@ -2,8 +2,6 @@ package com.udacity.asteroidradar.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 import com.udacity.asteroidradar.Asteroid
 import com.udacity.asteroidradar.Constants.DEFAULT_END_DATE_DAYS
 import com.udacity.asteroidradar.PictureOfDay
@@ -13,6 +11,8 @@ import com.udacity.asteroidradar.api.parseAsteroidsJsonResult
 import com.udacity.asteroidradar.database.AsteroidsDatabase
 import com.udacity.asteroidradar.database.DatabaseAsteroid
 import com.udacity.asteroidradar.database.asDomainModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import org.threeten.bp.LocalDate
 
 class AsteroidsRepository(private val database: AsteroidsDatabase) {
